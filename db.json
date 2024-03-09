@@ -123,43 +123,34 @@
   ],
   "user": [
     {
-      "id": "1"
-    },
-    {
-      "id": "2",
-      "email": "user1@gmail.com",
-      "password": "123456789"
-    }
-  ],
-  "admin": [
-    {
       "id": "1",
-      "email": "admin@gmail.com",
-      "password": "123456789"
-    }
-  ],
-  "LoginUsers": [
-    {
-      "id": "f630",
       "email": "itc.edu@gmail.com",
       "password": "123456789",
       "comfirm_password": "123456789"
     },
     {
-      "id": "5a09",
-      "email": "danvo236@gmail.com",
-      "password": "12345678",
-      "comfirm_password": "12345678"
-    },
-    {
-      "id": "2ab2",
-      "email": "itc1.edu@gmail.com",
+      "id": "2",
+      "email": "itc.edu1@gmail.com",
       "password": "123456789",
       "comfirm_password": "123456789"
     },
     {
-      "id": "550e",
-      "email": "itc.edu1@gmail.com",
+      "id": "011c",
+      "email": "admin@gmail.com",
+      "password": "123456789",
+      "comfirm_password": "123456789"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "email": "thaominh004@gmail.com",
+      "password": "123456789",
+      "comfirm_password": "123456789"
+    },
+    {
+      "id": "e4df",
+      "email": "admin@gmail.com",
       "password": "123456789",
       "comfirm_password": "123456789"
     }

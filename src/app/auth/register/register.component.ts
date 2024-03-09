@@ -13,8 +13,14 @@ export class RegisterComponent {
     password: '',
     comfirm_password: ''
   }
+  isPage:number =0
   constructor(private authService: AuthService) { }
+  onUserTypeChange(event: Event) {
+    const target = event.target as HTMLInputElement;
+    this.isPage = parseInt(target.value);
+  }
+
   submit() {
-    this.authService.register(this.form)
+    this.authService.register(this.form,this.isPage)
   }
 }

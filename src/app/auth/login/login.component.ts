@@ -8,14 +8,20 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  // @Input() productHome: LoginForm[] =[]
   form: LoginForm = {
     email: '',
     password: ''
   }
+  isPage: number=0;
+
   constructor(private authService: AuthService) { }
+
+  onUserTypeChange(event: Event) {
+    const target = event.target as HTMLInputElement;
+    this.isPage = parseInt(target.value);
+  }
+
   submit() {
-    this.authService.login(this.form)
-    console.log(this.form)
+    this.authService.login(this.form,this.isPage);
   }
 }

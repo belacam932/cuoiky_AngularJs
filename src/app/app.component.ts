@@ -9,6 +9,11 @@ import { AuthService } from './auth/auth.service';
 export class AppComponent {
   title = 'TruongMinhThao_514220671';
   constructor(private authService: AuthService) { }
+  isPage :number =0
+  isPageS()
+  {
+    return this.isPage=this.authService.isPage
+  }
   isAuthenticated() 
   {
     return this.authService.isAuthenticated
