@@ -1,0 +1,42 @@
+<div class="container">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+      <!--Brand -->
+      <a class="navbar-brand"href="/">
+        <i class="bi bi-house-fill"></i>
+      </a>
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+    <a class="nav-link"routerLink="/">Trang chủ</a>
+    </li>
+    <li class="nav-item active">
+    <a class="nav-link"routerLink="/list">Danh sách</a>
+    </li>
+  </ul>
+  <ul class="navbar-nav ml-auto ">
+    <li class="nav-item active">
+      <a class="nav-link"routerLink="/cart"href="#">Giỏ hàng</a>
+    </li>
+    <ng-container *ngIf="!isAuthenticated()">
+      <li class="nav-item active">
+        <a class="nav-link"routerLink="/login"href="#">Đăng nhập</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link"routerLink="/register"href="#">Đăng ký</a>
+      </li>
+    </ng-container>
+    <ng-container *ngIf="isAuthenticated()">
+      
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/Logout"href="#" (click)="logout()">Đăng xuất</a>
+      </li>
+    </ng-container>
+  </ul>
+  </nav>
+  <router-outlet></router-outlet>
+  
+</div>
+<style>
+  .navbar-brand{
+    margin-right: 1px;
+  }
+</style>

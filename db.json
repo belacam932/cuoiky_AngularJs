@@ -1,0 +1,167 @@
+{
+  "product": [
+    {
+      "id": "1",
+      "productName": "Thảo quả",
+      "price": 45000,
+      "description": "Thảo quả có đặc tính thơm, có vị ngọt và cay, thường được sử dụng để làm gia vị. Trong Đông y thường sử dụng để làm ấm bụng, tiêu ích, trừ đờm, trục hàn, điều trị rối loạn tiêu hóa,… ",
+      "imageUrl": "./assets/Products/thaoqua.jpg",
+      "inStock": 12
+    },
+    {
+      "id": "2",
+      "productName": "Xích thược",
+      "price": 38000,
+      "description": "Xích thược vị chua đắng, tính hơi hàn, quy vào kinh Can, Tỳ giúp giảm đau, kháng viêm, cầm máu. Cùng tham khảo những cách dùng vị dược liệu quý này làm thuốc chữa bệnh trong bài viết dưới đây.",
+      "imageUrl": "./assets/Products/xichthuoc.jpg",
+      "inStock": 12
+    },
+    {
+      "id": "3",
+      "productName": "Mộc thông",
+      "price": 15000,
+      "description": "Mộc thông là thực vật dây leo phân bố chủ yếu ở các tỉnh thành của Trung Quốc. Dược liệu có tác dụng lợi tiểu tiện, hoạt huyết, chỉ thống và thanh phế nhiệt, thường được nhân dân sử dụng để chữa chứng thấp nhiệt ở bàng quang, tia sữa không thông và kinh nguyệt bế tắc.",
+      "imageUrl": "./assets/Products/mocthong.jpg",
+      "inStock": 12
+    },
+    {
+      "id": "4",
+      "productName": "Hà Thủ Ô Đỏ",
+      "price": 30000,
+      "description": "Hà thủ ô đỏ là dược liệu quý có vị đắng, chát, tính ấm quy vào kinh Can, Thận. Chủ trị xơ vữa động mạnh, tiêu hóa kém, mất ngủ, cao huyết áp, tăng cholesterol trong máu. Cây thuốc này có chứa độc, vì vậy cần dùng đúng cách để tránh những tác dụng phụ nguy hiểm.",
+      "imageUrl": "./assets/Products/hathuo.jpg",
+      "inStock": 12
+    },
+    {
+      "id": "5",
+      "productName": "Thảo quyết minh",
+      "price": 45000,
+      "description": "Thảo quyết minh là vị thuốc nam có mọc hoang ở nhiều nơi trên cả nước. Vị thuốc có tác dụng hỗ trợ chữa huyết áp cao, mất ngủ, chàm, hắc lào, táo bón.",
+      "imageUrl": "./assets/Products/quyetminh.jpg",
+      "inStock": 12
+    },
+    {
+      "id": "6",
+      "productName": "Táo tàu",
+      "price": 23000,
+      "description": "Táo tàu được sử dụng làm thuốc trong Đông y với các tên gọi như hồng táo, đại táo. Dược liệu này có tác dụng an thần, bổ tỳ vị, lợi huyết, sinh tân dịch. Dưới đây là những công dụng của táo tàu và lưu ý quan trọng cần biết khi sử dụng.",
+      "imageUrl": "./assets/Products/taotau.jpg",
+      "inStock": 12
+    },
+    {
+      "id": "7",
+      "productName": "Cỏ mật",
+      "price": 12000,
+      "description": "Cỏ mật hay còn được biết đến với tên gọi cỏ ngọt, có chứa một glycoside tên là steviol với độ ngọt cao gấp 300 lần đường kính. Được sử dụng để làm tăng độ ngọt tự nhiên cho các món ăn. Cỏ mật còn là một vị thuốc quý với bệnh nhân tiểu đường, người cao huyết áp hay những người đang có chế độ ăn kiêng.",
+      "imageUrl": "./assets/Products/comat.jpg",
+      "inStock": 12
+    },
+    {
+      "id": "8",
+      "productName": "Nhụy hoa nghệ tây",
+      "price": 70000,
+      "description": "Saffron hay nhụy hoa nghệ tây trước đây là một loại “gia vị quý tộc” cho các bữa ăn hoàng gia. Nhụy hoa nghệ tây tác dụng nhiều trong việc làm đẹp làm đẹp và hỗ trợ điều trị một vài bệnh lý liên quan đến hệ thần kinh, tim mạch, tuần hoàn máu… ",
+      "imageUrl": "./assets/Products/nhuyhoanghetay.jpg",
+      "inStock": 12
+    },
+    {
+      "id": "9",
+      "productName": "Sâm cao ly",
+      "price": 100000,
+      "description": "Sâm cao ly hay còn được gọi với tên phổ biến là sâm Triều Tiên – một loại dược liệu rất quý hiếm. Vị thuốc có tác dụng ngừa ung thư, chống oxy hóa, làm giảm đường huyết… Nó được áp dụng trong rất nhiều bài thuốc chữa bệnh nhưng cần dùng đúng cách để tránh gặp phải các tác dụng phụ.",
+      "imageUrl": "./assets/Products/samcaoly.jpeg",
+      "inStock": 12
+    },
+    {
+      "id": "10",
+      "productName": "Ý dĩ",
+      "price": 67000,
+      "description": "Ý dĩ được dùng trong nhiều bài thuốc chữa các bệnh như ung thư, ho, sỏi,… còn hỗ trợ làm đẹp và giảm cân. Nhưng không nên quá lạm dụng có thể gây hại cho sức khỏe. Bạn nên tìm hiểu thật kĩ trước khi sử dụng. ",
+      "imageUrl": "./assets/Products/ydi.jpeg",
+      "inStock": 12
+    },
+    {
+      "id": "11",
+      "productName": "Thăng ma",
+      "price": 40000,
+      "description": "Thăng ma là vị thuốc có nguồn gốc từ Trung Quốc. Dược liệu này có vị đắng, tính hơi hàn, tác dụng hành ứ huyết, tăng dương, vận kinh, năng giải Tỳ Vị,… nên được ứng dụng trong bài thuốc chữa mụn nhọt sưng đau, dạ dày nóng, viêm họng, chân răng đỏ,…",
+      "imageUrl": "./assets/Products/thangma.jpg",
+      "inStock": 12
+    },
+    {
+      "id": "12",
+      "productName": "Hương phụ",
+      "price": 32000,
+      "description": "Hương phụ là loại thảo dược có tác dụng khá tốt trong việc điều hòa kinh nguyệt, chữa đau bụng kinh, sa trực tràng… Nhưng cũng có nhiều trường hợp không nên sử dụng vì có thể gây ảnh hưởng đến sức khỏe. ",
+      "imageUrl": "./assets/Products/huongphu.jpg",
+      "inStock": 12
+    },
+    {
+      "id": "13",
+      "productName": "Cam thảo",
+      "price": 50000,
+      "description": "Cam thảo là loại thuốc cổ xưa được chứng minh mang lại nhiều lợi ích tích cực đối với sức khỏe như giúp trị viêm họng, viêm da hoặc nhiễm trùng,… Tuy nhiên, trong quá trình sử dụng, người bệnh cũng nên thận trọng bởi vị thuốc tự nhiên này có thể gây ra nhiều tác dụng phụ bất lợi.",
+      "imageUrl": "./assets/Products/camthao.jpg",
+      "inStock": 12
+    },
+    {
+      "id": "14",
+      "productName": "Hợp hoan bì",
+      "price": 44000,
+      "description": "Hợp hoan bì là vị thuốc có tác dụng tích cực trong điều trị mất ngủ, gãy xương, phế ung, suy nhược cơ thể. Bệnh nhân có thể sử dụng dược liệu dưới dạng sắc uống, tán bột hoặc ngâm rượu với liều lượng 2 - 12 gram mỗi ngày.",
+      "imageUrl": "./assets/Products/hophoanbi.jpg",
+      "inStock": 12
+    },
+    {
+      "id": "15",
+      "productName": "Trâu cổ",
+      "price": 10000,
+      "description": "Trâu cổ là loại dây leo, mọc hoang nhiều tại các địa phương ở nước ta. Thân, cành, lá và quả của thảo dược này đều có tác dụng dược lý nên được tận dụng để điều trị chứng liệt dương, di mộng tinh, đau nhức xương khớp, tia sữa tắc và tuyến vú sưng đau.",
+      "imageUrl": "./assets/Products/trauco.jpg",
+      "inStock": 12
+    }
+  ],
+  "user": [
+    {
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "email": "user1@gmail.com",
+      "password": "123456789"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "email": "admin@gmail.com",
+      "password": "123456789"
+    }
+  ],
+  "LoginUsers": [
+    {
+      "id": "f630",
+      "email": "itc.edu@gmail.com",
+      "password": "123456789",
+      "comfirm_password": "123456789"
+    },
+    {
+      "id": "5a09",
+      "email": "danvo236@gmail.com",
+      "password": "12345678",
+      "comfirm_password": "12345678"
+    },
+    {
+      "id": "2ab2",
+      "email": "itc1.edu@gmail.com",
+      "password": "123456789",
+      "comfirm_password": "123456789"
+    },
+    {
+      "id": "550e",
+      "email": "itc.edu1@gmail.com",
+      "password": "123456789",
+      "comfirm_password": "123456789"
+    }
+  ]
+}
