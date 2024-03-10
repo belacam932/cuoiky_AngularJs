@@ -1,7 +1,7 @@
 
     <div class="row mt-3">
         <div class="col-md-6">
-        <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#modelId">
+        <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#modelId">
                 Add new
         </button>
         </div>
@@ -23,15 +23,15 @@
                     <td scope="row">
                         <img src="{{item.imageUrl}}"width="50px"alt=""srcset=""> 
                     </td>
-                    <td><a routerLink="/product-details/{{item.id}}">{{item.productName}}</a></td>
+                    <td ><a style="text-decoration: none; color: black;" routerLink="/product-details/{{item.id}}">{{item.productName}}</a></td>
                     <td>{{item.price}}</td>
                     <td colspan="2">{{item.description}}</td>
                     <td class="text-center">
-                        <span class="btn btn-primary btn-sm mr-1" type="button" (click)="Edit(i);IsAdd=0;IsUpdate=2"
+                        <span class="btn btn-success btn-sm mr-1" type="button" (click)="Edit(i);IsAdd=0;IsUpdate=2"
                         data-toggle="modal" data-target="#modelId">Edit</span>
                     </td>
                     <td>
-                        <span class="btn btn-danger btn-sm" type="button" (click)="Delete(i)">Delete</span>
+                        <span class="btn btn-success btn-sm" type="button" (click)="Delete(i)">Delete</span>
                     </td>
                 </tr>
             </tbody>
@@ -74,14 +74,16 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="">Picture</label>
-                                    <input type="file"[formControl]="formProduct.controls.imageUrl"(change)="onChange($event)"name=""id=""class="form-control"placeholder=""aria-describedby="helpId">
-                                    <!--<smallid="helpId"class="text-muted">Helptext</small>-->
+                                  <label for="">picture</label>
+                                  <input type="file" (change)="onChange($event)" name="" id="" class="form-control" placeholder=""
+                                    aria-describedby="helpId">
+                                  <!--<smallid="helpId"class="text-muted">Helptext</small>-->
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <img [src]="file"width="100%"alt="">
-                            </div>
+                                <input type="text" [formControl]="formProduct.controls.imageUrl">
+                              </div>
+                              <div class="col-md-6">
+                                <img [src]="file" width="100%" alt="">
+                              </div>
                         </div>
                     </form>
                 </div>

@@ -1,38 +1,52 @@
 <div>
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <table style="width: 100%;" class="text-center table">
-          <tr>
-            <th>Picture</th>
-            <th>Product name</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Total amount</th>
-            <th></th>
-          </tr><!--dùng ng-for thể hiện giỏ hàng -->
-          <tr *ngFor="let item of cartList;let i=index">
-            <td>
-              <img src="{{item.ImageUrl}}" style="height: 100px;width: 100px;">
-            </td>
-            <td class="align-middle"> {{item.Name}}</td>
-            <td class="align-middle">{{item.Price|currency :'VND'}}</td>
-            <td class="align-middle">{{item.Quantity}}</td>
-            <td class="align-middle">{{item.Price!*item.Quantity!|currency :'VND'}}</td>
-            <td class="align-middle">
-              <button class="btn btn-danger" (click)="Remove(i)">Remove</button>
-            </td>
-          </tr>
-          <tr>
-            <th colspan="2">
-            </th>
-            <th>Sum price:</th>
-            <th>{{ItemCount()}}</th>
-            <th>{{ ItemSum() |currency :'VND'}}</th>
-            <th>
-              <button class="btn btn-danger" (click)="DeleteAll()">Delete All</button>
-            </th>
-          </tr>
-        </table>
-      </div>
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <table style="width: 100%;" class="text-center table"
+        *ngIf="cartList.length>0; else elseTemplate">
+        <tr>
+          <th>Picture</th>
+          <th>Product name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total amount</th>
+          <th></th>
+        </tr><!--dùng ng-for thể hiện giỏ hàng -->
+        <tr *ngFor="let item of cartList;let i=index">
+          <td>
+            <img src="{{item.ImageUrl}}" style="height: 100px;width: 100px;">
+          </td>
+          <td class="align-middle"> {{item.Name}}</td>
+          <td class="align-middle">{{item.Price|currency :'VND'}}</td>
+          <td class="align-middle ">
+            <button class="btn" (click)="increment(i)">
+              <span class="badge badge-success">+</span>
+            </button>
+            {{item.Quantity}}
+            <button class="btn" [disabled]="item.Quantity!<=1" 
+            (click)="decrement(i)">
+              <span class="badge badge-success">-</span>
+            </button>
+          </td>
+          <td class="align-middle">{{item.Price!*item.Quantity!|currency :'VND'}}</td>
+          <td class="align-middle">
+            <button class="btn btn-danger" (click)="Remove(i)">Remove</button>
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2">
+          </th>
+          <th>Sum price:</th>
+          <th>{{ItemCount()}}</th>
+          <th>{{ ItemSum() |currency :'VND'}}</th>
+          <th>
+            <button class="btn btn-primary" (click)="DeleteAll()">Delete All</button> &nbsp;
+            <button class="btn btn-warning" (click)="DeleteAll()">Thanh Toán</button>
+          </th>
+        </tr>
+      </table>
+      <ng-template #elseTemplate>
+        <div class="btn btn-danger" routerLink="/"> Mời bạn chọn mua !</div>
+      </ng-template>
     </div>
   </div>
+</div>

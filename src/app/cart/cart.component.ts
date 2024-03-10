@@ -49,4 +49,13 @@ export class CartComponent {
   DeleteAll() {
     this.cartService.DeleteAllCart()
   }
+  increment(i: number) {
+    this.cartList[i].Quantity!++;
+  }
+
+  decrement(i: number) {
+    if (this.cartList[i].Quantity! > 0) {
+      this.cartList[i].Quantity!--;
+    }
+  }
 }
