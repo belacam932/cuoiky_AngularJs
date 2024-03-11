@@ -31,7 +31,7 @@ export class AuthService {
     ///User
     if (isPage == 0) {
       this.getLoginUser().subscribe((users: LoginForm[]) => {
-        const user = users.find(u => u.email === form.email && u.password === form.password);
+        const user = users.find(item => item.email === form.email && item.password === form.password);
         if (user) {
           this.isAuthenticated = true;
           this.router.navigate(['']);
@@ -46,7 +46,7 @@ export class AuthService {
     ///admin
     else if (isPage == 1) {
       this.getLoginAdmin().subscribe((admins: LoginForm[]) => {
-        const admin = admins.find(u => u.email === form.email && u.password === form.password);
+        const admin = admins.find(item => item.email === form.email && item.password === form.password);
         if (admin) {
           this.isAuthenticated = true;
           this.router.navigate(['list']);
@@ -67,39 +67,38 @@ export class AuthService {
     //User
     else if (isPage == 0) {
       this.getLoginUser().subscribe((users: any[]) => {
-        const existingUser = users.find(u => u.email === form.email);
-        if (existingUser) {
-          alert('Email already exists');
+        const ktUser = users.find(item => item.email === form.email);
+        if (ktUser) {
+          alert('Email đã tồn tại!');
         } else {
           this.http.post(this.User, form).subscribe(() => {
-            this.router.navigate(['list']);
+            this.router.navigate(['']);
+            this.isPage=0
             this.isAuthenticated = true;
-            alert('Register successful');
+            alert('Đăng ký thành công');
           });
         }
-      }, error => {
-        console.error('registration failed:', error);
       });
     }
     else if (isPage == 1) {
       this.getLoginAdmin().subscribe((admins: any[]) => {
-        const existingAdmin = admins.find(u => u.email === form.email);
-        if (existingAdmin) {
-          alert('Email already exists');
+        const ktAdmin = admins.find(item => item.email === form.email);
+        if (ktAdmin) {
+          alert('Email đã tồn tại!');
         } else {
           this.http.post(this.Admin, form).subscribe(() => {
             this.router.navigate(['list']);
+            this.isPage=1
             this.isAuthenticated = true;
-            alert('Register successful');
+            alert('Đăng ký thành công');
           });
         }
-      }, error => {
-        console.error('registration failed:', error);
-      });
+      })
     }
   }
   logout() {
     this.router.navigate([''])
     this.isAuthenticated = false
+    this.isPage=0
   }
 }

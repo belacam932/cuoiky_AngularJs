@@ -13,7 +13,6 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
     AuthComponent,
     LoginComponent,
     RegisterComponent,
-    CartComponent
+    CartComponent,
   ],
   imports: [
     BrowserModule,

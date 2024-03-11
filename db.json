@@ -119,13 +119,6 @@
       "description": "Trâu cổ là loại dây leo, mọc hoang nhiều tại các địa phương ở nước ta. Thân, cành, lá và quả của thảo dược này đều có tác dụng dược lý nên được tận dụng để điều trị chứng liệt dương, di mộng tinh, đau nhức xương khớp, tia sữa tắc và tuyến vú sưng đau.",
       "imageUrl": "./assets/Products/trauco.jpg",
       "inStock": 12
-    },
-    {
-      "productName": "Hoa tây",
-      "price": 4200,
-      "description": "đẹp hết chỗ chdơi",
-      "imageUrl": "./assets/Products/comat.jpg",
-      "id": "958d"
     }
   ],
   "user": [
@@ -142,8 +135,20 @@
       "comfirm_password": "123456789"
     },
     {
-      "id": "011c",
+      "id": "3b53",
+      "email": "user@gmail.com",
+      "password": "123456789",
+      "comfirm_password": "123456789"
+    },
+    {
+      "id": "aae6",
       "email": "admin@gmail.com",
+      "password": "123456789",
+      "comfirm_password": "123456789"
+    },
+    {
+      "id": "3e82",
+      "email": "user1@gmail.com",
       "password": "123456789",
       "comfirm_password": "123456789"
     }

@@ -12,12 +12,12 @@
     <a class="nav-link"routerLink="/list" *ngIf="isAuthenticated() && isPageS()">Sản Phẩm</a>
     </li>
     <li class="nav-item active">
-      <a class="nav-link"routerLink="/list" *ngIf="isAuthenticated() && isPageS()">Danh sách</a>
+      <a class="nav-link"routerLink="/adminlist" *ngIf="isAuthenticated() && isPageS()">Danh sách</a>
       </li>
   </ul>
   <ul class="navbar-nav ml-auto ">
     <li class="nav-item active">
-      <a class="nav-link"routerLink="/cart"href="#" *ngIf="!isAuthenticated() && !isPageS()">Giỏ hàng</a>
+      <a class="nav-link"routerLink="/cart"href="#" *ngIf="!isAuthenticated() && !isPageS() || isAuthenticated() && !isPageS()">Giỏ hàng</a>
     </li>
     <ng-container *ngIf="!isAuthenticated()">
       <li class="nav-item active">
