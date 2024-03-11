@@ -14,7 +14,8 @@ export class ListComponent {
     productName: new FormControl<string>(''),
     price: new FormControl<number>(0),
     description: new FormControl<string>(''),
-    imageUrl: new FormControl<string>('')
+    imageUrl: new FormControl<string>(''),
+    inStock: new FormControl<number>(10)
   })
   file: string = ''
   IsAdd: number = 1

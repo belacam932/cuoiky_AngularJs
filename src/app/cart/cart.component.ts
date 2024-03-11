@@ -16,8 +16,6 @@ export class CartComponent {
   cartList: Cart[] = []
   InStock: number = 0
   constructor(private router: ActivatedRoute,
-    private productService: ProductService,
-    private router1: Router,
     private cartService: CartService,
     private authService: AuthService
     ) {
@@ -32,10 +30,7 @@ export class CartComponent {
     if (this.authService.isAuthenticated) {
       this.cartService.addCart(this.productDetail?.id!, this.productDetail);
       this.InStock = this.cartService.getInStock(this.productDetail?.id!)!;
-    } else {
-      this.router1.navigate(['login']);
-      alert('Vui lòng đăng nhập để đặt hàng');
-    }
+      }
   }
   ItemCount() {
     return this.cartService.totalItems()

@@ -80,10 +80,7 @@ export class CartService {
     }
     DeleteAllCart(){
       for(let i=0; i<this.cartList.length;i++){
-        this.cartList.splice(i,this.cartList.length);
-       
+        this.cartList.splice(i,this.cartList.length); 
       }
-      
-      
     }
 }
